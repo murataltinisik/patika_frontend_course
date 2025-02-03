@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 3px 9px 2px #eee;
+}
+
+.navbar ul {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.navbar ul li {
+  padding: 0 8px;
+}
+
+.navbar ul li a {
+  color: green;
+  font-weight: bold;
+}

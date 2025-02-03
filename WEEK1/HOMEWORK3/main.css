@@ -1,0 +1,15 @@
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  padding: 2rem;
+}
