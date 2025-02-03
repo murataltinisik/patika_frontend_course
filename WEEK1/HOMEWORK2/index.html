@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY BLOG</title>
+    <!-- STYLE:start -->
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #f9f9f9;
+        font-family: "Courier New", Courier, monospace;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* TITLE */
+      .title {
+        padding: 10px;
+        background-color: greenyellow;
+      }
+
+      /* LAYOUT */
+      .layout-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+      }
+
+      /* CONTENT */
+      .content {
+        margin: 0 2rem;
+        text-align: center;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 0 6px 2px #eee;
+      }
+
+      .content h2 {
+        padding-bottom: 16px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      /* GITHUB CONTENT */
+      .github-content {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* GITHUB IMAGE */
+      .github-image {
+        border-radius: 10px;
+        box-shadow: 0 0 12px 3px #ccc;
+      }
+
+      /* GITHUB IMAGE LINK */
+      .github-image-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+      .github-image-link a {
+        padding: 8px;
+        color: green;
+        border-radius: 5px;
+        background-color: #fff;
+      }
+    </style>
+    <!-- STYLE:end -->
+  </head>
+  <body>
+    <!-- TITLE:start -->
+    <h1 class="title">MURAT ALTINIŞIK</h1>
+    <!-- TITLE:end -->
+
+    <!-- GITHUB:start -->
+    <div class="github-content">
+      <!-- IMAGE:start -->
+      <img
+        width="200"
+        class="github-image"
+        alt="MURAT ALTINIŞIK"
+        src="https://avatars.githubusercontent.com/u/112017427?v=4"
+      />
+      <!-- IMAGE:end -->
+
+      <!-- LINK:start -->
+      <p class="github-image-link">
+        <a target="_blank" href="https://github.com/murataltinisik">GİTHUB</a>
+      </p>
+      <!-- LINK:end -->
+    </div>
+    <!-- GITHUB:end -->
+
+    <!-- LAYOUT:start -->
+    <div class="layout-flex">
+      <!-- CONTENT:start -->
+      <div class="content">
+        <!-- TITLE:start -->
+        <h2>İletişim</h2>
+        <!-- TITLE:end -->
+
+        <!-- LIST:start -->
+        <ol>
+          <li><span>Telefon:</span> <b>537-307-6805</b></li>
+          <li><span>Email:</span> <b>altinisikmurat396@gmail.com</b></li>
+        </ol>
+        <!-- LIST:end -->
+      </div>
+      <!-- CONTENT:end -->
+
+      <!-- CONTACT:start -->
+      <div class="content">
+        <!-- TITLE:start -->
+        <h2>Yetenekler</h2>
+        <!-- TITLE:end -->
+
+        <!-- LIST:start -->
+        <ol>
+          <li>
+            <span>BACKEND:</span>
+            <b
+              >NODE JS, PHP (LARAVEL), JAVA (SPRING), C# (.NET), PYTHON (DJANGO,
+              FLASK)</b
+            >
+          </li>
+
+          <li>
+            <span>FRONTEND:</span>
+            <b>HTML, CSS, SCSS, JS, TS, JQUERY, REACT, SWELTE</b>
+          </li>
+
+          <li>
+            <span>SQL:</span>
+            <b>MongoDB, MySQL, PostgreSQL, MsSQL SERVER</b>
+          </li>
+
+          <li>
+            <span>OTHER:</span>
+            <b>Photoshop CS6, ADOBE XD</b>
+          </li>
+        </ol>
+        <!-- LIST:end -->
+      </div>
+      <!-- CONTENT:end -->
+    </div>
+    <!-- LAYOUT:end -->
+
+    <!-- GOOGLE MAPS:start -->
+    <div class="content">
+      <!-- TITLE:start -->
+      <h2>Google Maps</h2>
+      <!-- TITLE:end -->
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.7323820369085!2d-122.0842494845907!3d37.421999879825456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24b5b5b5b5b%3A0xabcdef1234567890!2sGoogleplex!5e0!3m2!1str!2str!4v1635285012689!5m2!1str!2str"
+        width="400"
+        height="250"
+      >
+      </iframe>
+    </div>
+    <!-- GOOGLE MAPS:end -->
+  </body>
+</html>
