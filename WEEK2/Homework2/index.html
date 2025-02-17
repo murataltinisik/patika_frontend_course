@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayıt Form</title>
+    <!-- STYLE -->
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- TITLE:start -->
+    <h1 id="title">Surver From Css Practice</h1>
+    <!-- TITLE:end -->
+
+    <!-- FORM:start -->
+    <div id="form-container">
+      <form class="form" autocomplete="off">
+        <!-- Fullname -->
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Please, Enter your fullname"
+        />
+
+        <!-- Mail -->
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Please, Enter your email"
+        />
+
+        <!-- Age -->
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Please, Enter your age"
+        />
+
+        <!-- Gender -->
+        <select class="form-control">
+          <option value="">Seçiniz</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+        </select>
+
+        <!-- Radios -->
+        <div>
+          <input type="radio" name="social-media" value="instagram" /> Instagram
+          <input type="radio" name="social-media" value="linkedin" /> LinkedIn
+        </div>
+
+        <br />
+
+        <button class="form-submit">Gönder</button>
+      </form>
+    </div>
+    <!-- FORM:end -->
+  </body>
+</html>
