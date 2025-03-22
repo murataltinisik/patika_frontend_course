@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- STYLE.css -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="container py-5">
+      <div id="joke-card" class="text-center mx-auto" style="max-width: 900px">
+        <h3 id="joke-title" class="mb-4">Chuck Norris Şakaları</h3>
+        <p id="joke-text" class="mb-4">
+          When landing on the moon, Neil Armstrong actually said, 'one small
+          step for man, one giant leap for mankind... and just an average stride
+          for Chuck Norris'
+        </p>
+        <button class="btn joke-btn" onclick="getJoke()">Başka Bir Şaka</button>
+
+        <img src="" id="joke-image" />
+      </div>
+    </div>
+
+    <!-- BOOTSTRAP -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Get Joke
+      const getJoke = async () => {
+        // Response
+        const response = await fetch("https://api.chucknorris.io/jokes/random");
+
+        // Get Data
+        const data = await response.json();
+
+        console.log("data", data);
+
+        // Set Joke
+        document.getElementById("joke-text").innerText = data.value;
+        document
+          .getElementById("joke-image")
+          .setAttribute("src", data.icon_url);
+      };
+
+      document.onload = getJoke();
+    </script>
+  </body>
+</html>
