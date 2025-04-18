@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "StarJedi";
+  src: url("/public//fonts/Starjhol.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.star-wars-font {
+  font-family: "StarJedi", sans-serif;
+}
